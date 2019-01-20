@@ -1,0 +1,104 @@
+Mappings:
+  Global:
+    ACM:
+      CertficateArn: "arn:aws:acm:us-east-1:150118313678:certificate/2dcae982-e0bf-4df0-aaaf-30c786441cf6"
+    Route53:
+      RootRecord: "mikeder.net"
+      ImageRecord: "images.mikeder.net"
+      WWWRecord: "www.mikeder.net"
+      ZoneId: "Z2R4KD1343LS45"
+
+Resources:
+  RootRecord:
+    Type: AWS::Route53::RecordSetGroup
+    Properties:
+      HostedZoneId: !FindInMap [ Global, Route53, ZoneId ]
+      RecordSets:
+      - Name: !FindInMap [ Global, Route53, RootRecord ]
+        Type: A
+        AliasTarget:
+          HostedZoneId: !FindInMap [ Global, Route53, ZoneId ]
+          DNSName: !GetAtt CDN.DomainName
+
+  ImageRecord:
+    Type: AWS::Route53::RecordSetGroup
+    Properties:
+      HostedZoneId: !FindInMap [ Global, Route53, ZoneId ]
+      RecordSets:
+      - Name: !FindInMap [ Global, Route53, ImageRecord ]
+        Type: A
+        AliasTarget:
+          HostedZoneId: !FindInMap [ Global, Route53, ZoneId ]
+          DNSName: !GetAtt CDN.DomainName
+
+  WWWRecord:
+    Type: AWS::Route53::RecordSetGroup
+    Properties:
+      HostedZoneId: !FindInMap [ Global, Route53, ZoneId ]
+      RecordSets:
+      - Name: !FindInMap [ Global, Route53, WWWRecord ]
+        Type: A
+        AliasTarget:
+          HostedZoneId: !FindInMap [ Global, Route53, ZoneId ]
+          DNSName: !GetAtt CDN.DomainName
+
+  CDN:
+    Type: AWS::CloudFront::Distribution
+    DependsOn:
+      - OAI
+      - StaticBucket
+    Properties:
+      DistributionConfig:
+        Aliases:
+          - !FindInMap [ Global, Route53, RootRecord ]
+          - !FindInMap [ Global, Route53, ImageRecord ]
+          - !FindInMap [ Global, Route53, WWWRecord ]
+        Comment: !Sub "Managed by CloudFormation: ${AWS::StackName}"
+        DefaultCacheBehavior:
+          AllowedMethods: [ GET, HEAD, OPTIONS ]
+          Compress: false
+          ForwardedValues:
+            QueryString: true
+          TargetOriginId: !Sub "${AWS::StackName}-S3"
+          ViewerProtocolPolicy : redirect-to-https
+        Enabled: true
+        HttpVersion: http2
+        Origins:
+          - Id: !Sub '${AWS::StackName}-S3'
+            DomainName: !GetAtt StaticBucket.DomainName
+            S3OriginConfig:
+              OriginAccessIdentity: !Sub "origin-access-identity/cloudfront/${OAI}"
+        ViewerCertificate:
+          AcmCertificateArn: !FindInMap [ Global, ACM, CertficateArn ]
+          SslSupportMethod: sni-only
+          MinimumProtocolVersion: TLSv1.1_2016
+      Tags:
+        - Key: "Purpose"
+          Value: "Static Website Distribution"
+
+  OAI:
+    Type: AWS::CloudFront::CloudFrontOriginAccessIdentity
+    Properties:
+      CloudFrontOriginAccessIdentityConfig:
+        Comment: "Static Site Origin Identity"
+
+  StaticBucket:
+    Type: AWS::S3::Bucket
+
+  BucketPolicy:
+    Type: AWS::S3::BucketPolicy
+    DependsOn:
+      - OAI
+      - StaticBucket
+    Properties:
+      Bucket: !Ref StaticBucket
+      PolicyDocument:
+        Id: site-policy
+        Version: 2012-10-17
+        Statement:
+          - Sid: OAI
+            Effect: Allow
+            Action: "s3:GetObject"
+            Resource: !Sub "arn:aws:s3:::${StaticBucket}/*"
+            Principal:
+              CanonicalUser: !GetAtt OAI.S3CanonicalUserId
