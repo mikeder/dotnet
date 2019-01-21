@@ -1,7 +1,6 @@
 ---
 title: "Resume"
-date: 2019-01-20T18:11:32-05:00
-weight: 1
+date: 2019
 ---
 
 Michael W. Eder

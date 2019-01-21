@@ -62,6 +62,7 @@ Resources:
             QueryString: true
           TargetOriginId: !Sub "${AWS::StackName}-S3"
           ViewerProtocolPolicy : redirect-to-https
+        DefaultRootObject: "index.html"
         Enabled: true
         HttpVersion: http2
         Origins:
@@ -85,6 +86,12 @@ Resources:
 
   StaticBucket:
     Type: AWS::S3::Bucket
+    Properties:
+      AccessControl: PublicRead
+      WebsiteConfiguration:
+        IndexDocument: index.html
+        ErrorDocument: error.html
+    DeletionPolicy: Retain
 
   BucketPolicy:
     Type: AWS::S3::BucketPolicy
@@ -97,7 +104,7 @@ Resources:
         Id: site-policy
         Version: 2012-10-17
         Statement:
-          - Sid: OAI
+          - Sid: AllowCloudFrontOAI
             Effect: Allow
             Action: "s3:GetObject"
             Resource: !Sub "arn:aws:s3:::${StaticBucket}/*"

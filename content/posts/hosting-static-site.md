@@ -32,3 +32,6 @@ aws codebuild create-webhook --project-name mikederdotnet
 ```
 
 Add theme and remove `.git` directory from it!
+
+Accept defeat and enable static website hosting on the S3 bucket to enforce
+default root object to `index.html`.

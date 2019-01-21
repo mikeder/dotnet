@@ -1,4 +1,12 @@
-## Mike Eder - think/work log
+---
+title: "Old Index"
+description: "First vim/git blog thing."
+date: 2015
+tags:
+- homelab
+- networking
+- proxmox
+---
 
 ###Links:
 * GitHub
