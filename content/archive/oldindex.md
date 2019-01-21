@@ -512,8 +512,6 @@ While googling around to make sure my formatting was correct I found
 http://cronchecker.net, a very useful tool to spell out exactly how your cron
 entry will execute.
 
-![alt text](http://mikeder.net/img/cronChecker.PNG "Example")
-
 --------------------------------------------------------------------------------
 ### Fri Jan  2 05:15:44 EST 2015
 
