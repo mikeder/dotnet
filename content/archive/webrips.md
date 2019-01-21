@@ -1,7 +1,6 @@
 ---
 title: "Webrips"
 date: 2015-03-1T21:59:13-05:00
-draft: true
 tags:
 - random
 - music

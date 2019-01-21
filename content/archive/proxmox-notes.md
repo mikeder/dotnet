@@ -1,7 +1,6 @@
 ---
 title: "Proxmox Notes"
 date: 2015-04-12T18:08:32-05:00
-draft: false
 tags:
 - homelab
 - networking
