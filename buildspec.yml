@@ -3,8 +3,8 @@ version: 0.2
 env:
   parameter-store:
     AWS_BUCKET: /mikederdotnet/bucket_name
-    AWS_ACCESS_KEY_ID: /codebuild/AWS_ACCESS_KEY_ID
-    AWS_SECRET_ACCESS_KEY: /codebuild/AWS_SECRET_ACCESS_KEY
+    AWS_ACCESS_KEY_ID: /codebuild/staticbucket/AWS_ACCESS_KEY_ID
+    AWS_SECRET_ACCESS_KEY: /codebuild/staticbucket/AWS_SECRET_ACCESS_KEY
 
 phases:
   build:
