@@ -1,7 +1,7 @@
 ---
 title: "Hosting Static Site"
 date: 2019-01-20T20:50:15-05:00
-draft: true
+draft: false
 tags:
 - AWS
 - cloud
