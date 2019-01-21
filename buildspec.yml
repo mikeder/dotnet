@@ -9,7 +9,6 @@ env:
 phases:
   build:
     commands:
-      - make debug
       - make
       - make debug
       - make publish
