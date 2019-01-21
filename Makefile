@@ -1,5 +1,7 @@
 SHELL := /bin/sh -e
 
+BUILDIMAGE="mikeder/hugobuilder"
+
 ifeq (hugo,$(firstword $(MAKECMDGOALS)))
   # use the rest as arguments for "run"
   RUN_ARGS := $(wordlist 2,$(words $(MAKECMDGOALS)),$(MAKECMDGOALS))
@@ -21,10 +23,10 @@ debug:
 	ls -alh public/
 
 deps:
-	docker build -t developer:latest .
+	docker build -t $(BUILDIMAGE):latest .
 
 dev:
-	docker run --rm -it -v $$(pwd):/data -p1313:1313 developer:latest serve
+	docker run --rm -it -v $$(pwd):/data -p1313:1313 $(BUILDIMAGE):latest serve
 
 publish:
 ifeq "$(CODEBUILD_WEBHOOK_TRIGGER)" "branch/master"
