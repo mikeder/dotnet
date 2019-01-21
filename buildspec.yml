@@ -10,4 +10,5 @@ phases:
   build:
     commands:
       - make
+      - make debug
       - make publish
