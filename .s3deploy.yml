@@ -7,4 +7,4 @@ routes:
   - route: "^.+\\.(png|jpg|pdf|html|json|xml|mp4|mp3)$"
     headers:
       Cache-Control: "s-maxage=60, no-transform, public"
-      gzip: true
+    gzip: true
