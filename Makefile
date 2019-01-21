@@ -13,7 +13,7 @@ endif
 .PHONY: hugo
 
 build:
-	hugo -DEF
+	hugo
 
 serve:
 	hugo server --bind=0.0.0.0 -D -w

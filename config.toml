@@ -6,8 +6,10 @@ enableEmoji = true
 enableGitInfo = false
 
 [outputs]
-  home = ["HTML", "AMP", "RSS"]
+  archive = ["HTML"]
+  home = ["HTML", "RSS"]
   page = ["HTML"]
+  posts = ["HTML", "RSS"]
 
 [params]
   author = "Mike Eder"
