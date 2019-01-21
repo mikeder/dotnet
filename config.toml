@@ -1,0 +1,14 @@
+baseURL = "https://mikeder.net"
+languageCode = "en-us"
+title = "Mike Eder's Weblog"
+theme = "m10c"
+
+[params]
+  author = "Mike Eder"
+  description = "think/work log for my coding, homelab and music adventures."
+  [[params.social]]
+    name = "github"
+    url = "https://github.com/mikeder"
+  [[params.social]]
+    name = "twitter"
+    url = "https://twitter.com/sqweebking"
