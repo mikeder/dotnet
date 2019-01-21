@@ -24,3 +24,12 @@ Write CloudFormation template to build the following:
 
 Using CodeBuild to orchestrate the build and deploy with help from Docker and
 [s3deploy](https://github.com/bep/s3deploy).
+
+
+
+
+After CodeBuild project is setup, create the webhook:
+
+```
+aws codebuild create-webhook --project-name mikederdotnet
+```
