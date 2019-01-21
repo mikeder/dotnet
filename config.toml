@@ -3,7 +3,7 @@ languageCode = "en-us"
 title = "Mike Eder's Weblog"
 theme = "m10c"
 enableEmoji = true
-enableGitInfo = true
+enableGitInfo = false
 
 [outputs]
   home = ["HTML", "AMP", "RSS"]
