@@ -20,6 +20,7 @@ serve:
 
 debug:
 	ls -alh .
+	ls -alh content/
 	ls -alh public/
 
 deps:
