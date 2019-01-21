@@ -4,3 +4,4 @@ phases:
   build:
     commands:
       - make
+      - make publish
