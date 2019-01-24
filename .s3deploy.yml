@@ -10,3 +10,5 @@ routes:
       gzip: false
     - route: "^.+\\.(html|xml|json)$"
       gzip: true
+      headers:
+         Cache-Control: "max-age=60, no-transform, public"
