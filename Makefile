@@ -32,7 +32,7 @@ dev:
 publish:
 ifeq "$(CODEBUILD_WEBHOOK_TRIGGER)" "branch/master"
 	# Depends on AWS_BUCKET, AWS_ACCESS_KEY_ID and AWS_SECRET_ACCESS_KEY env vars
-	s3deploy -source=public -bucket=${AWS_BUCKET} -region=us-east-1
+	s3deploy -source=public -bucket=${AWS_BUCKET} -distribution-id=${AWS_CDN} -region=us-east-1
 else
 	@echo "Not on master branch, not publishing."
 endif

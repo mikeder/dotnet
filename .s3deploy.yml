@@ -1,13 +1,14 @@
 routes:
+    #  cache static assets for 20 years
     - route: "^.+\\.(js|css|svg|ttf)$"
-      #  cache static assets for 20 years
       headers:
          Cache-Control: "max-age=630720000, no-transform, public"
       gzip: true
     - route: "^.+\\.(png|jpg)$"
+      gzip: false
       headers:
          Cache-Control: "max-age=630720000, no-transform, public"
-      gzip: false
+    #  cache rendered for 60
     - route: "^.+\\.(html|xml|json)$"
       gzip: true
       headers:
