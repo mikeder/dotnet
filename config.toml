@@ -20,3 +20,11 @@ enableGitInfo = false
   [[params.social]]
     name = "twitter"
     url = "https://twitter.com/sqweebking"
+  [[params.social]]
+    name = "steam"
+    icon = "steam"
+    url = "https://steamcommunity.com/id/d0gg"
+  [[params.social]]
+  	title = "linkedin"
+  	icon = "linkedin"
+  	url = "https://www.linkedin.com/in/michael-eder-283831b8/"
