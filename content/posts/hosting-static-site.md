@@ -1,6 +1,7 @@
 ---
 title: "Hosting Static Site"
 date: 2019-01-20T20:50:15-05:00
+description: "New attempt at a static site hosted in the cloud."
 draft: false
 tags:
 - AWS
@@ -15,11 +16,12 @@ Write CloudFormation template to build the following:
 
 - [x] CloudFront Distro
 - [x] S3 Bucket
+- [ ] Static Site Hosting
 - [x] S3 Bucket Policy
 - [x] Route53 records
-- [ ] ~API Gateway for webhook trigger~ `not needed`
-- [ ]  CodeBuild Project
-
+- [ ] CodeBuild Project
+- [ ] SSM Variables ( Bucket, CDN ID, Keys )
+- [ ] SSM Policy
 
 
 Using CodeBuild to orchestrate the build and deploy with help from Docker and

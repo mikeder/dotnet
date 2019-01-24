@@ -2,6 +2,7 @@
 title: "Graphite Client Additions"
 date: 2015-02-19T04:26:37-05:00
 tags:
+- archive
 - homelab
 - graphite
 - metrics

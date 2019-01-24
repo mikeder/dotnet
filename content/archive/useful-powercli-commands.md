@@ -2,6 +2,7 @@
 title: "Useful Powercli Commands"
 date: 2015-02-12T08:26:08-05:00
 tags:
+- archive
 - random
 - notes
 - cli

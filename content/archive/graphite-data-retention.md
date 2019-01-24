@@ -2,6 +2,7 @@
 title: "Graphite Data Retention"
 date: 2015-02-19T08:14:56-05:00
 tags:
+- archive
 - homelab
 - graphite
 - metrics
