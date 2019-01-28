@@ -20,21 +20,5 @@ enableGitInfo = false
   githubName = "mikeder"
   linkedinName = "michael-eder-283831b8"
   hideSidebarIconText = true
-  # "light" or "dark"
-  defaultTheme = "dark"
+  hideShareOptions = true
 
-[menu]
-  [[menu.main]]
-    identifier = "resume"
-    name = "Resume"
-    url = "/pages/resume"
-  [[menu.main]]
-    identifier = "tags"
-    name = "Tags"
-    url = "/tags"
-
-[languages]
-  [languages.en]
-    writtenBy = "Written by"
-    readMore = "Read more"
-    readOtherPosts = "Read other posts"
