@@ -1,6 +1,6 @@
 ---
 title: "Resume"
-date: 2019
+date: 2019-01-25
 ---
 
 Michael W. Eder
@@ -13,8 +13,7 @@ Michael W. Eder
 #### Work History
 
 
-### Software Engineer / Core Engineering, Bethesda.net
-`Feb. 2017 - Present`
+### Software Engineer / Core Engineering, Bethesda.net `Feb. 2017 - Present`
 
 -   AWS architecture solutions implementation and usage governance.
 -   Build, maintain and support Python services that make up the BNET
@@ -28,8 +27,7 @@ Michael W. Eder
 -   Migrated platform deployment from monolithic EC2 instances to
     Docker/ECS micro services, based on common core library.
 
-### Tools Administrator / ServiceNow Developer, Zenimax Online Studios
-`Apr. 2016 - Feb. 2017`
+### Tools Administrator / ServiceNow Developer, Zenimax Online Studios `Apr. 2016 - Feb. 2017`
 
 -   Live Operations, monitoring, alerting tools integration and
     development.
@@ -40,8 +38,7 @@ Michael W. Eder
     [ChangeGear](https://www.sunviewsoftware.com/products) ticketing
     systems.
 
-### System Administrator, Zenimax Online Studios
-`Aug. 2014 - Apr. 2016`
+### System Administrator, Zenimax Online Studios `Aug. 2014 - Apr. 2016`
 
 Operations and Development support for various game studios within the
 Bethesda/Zenimax Media umbrella.

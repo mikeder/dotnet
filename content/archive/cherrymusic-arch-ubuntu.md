@@ -1,10 +1,12 @@
 ---
 title: "Cherrymusic Arch Ubuntu"
-date: 2019-01-23T22:24:58-05:00
-draft: true
+date: 2014-12-18T11:06:35-05:00
+tags:
+- archive
+- linux
+- music
+- development
 ---
-
-### Thu Dec 18 11:06:35 EST 2014
 
 #### CherryMusic update/migration from Arch Linux to Ubuntu 14.10
 
