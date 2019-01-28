@@ -36,6 +36,3 @@ ifeq "$(CODEBUILD_WEBHOOK_TRIGGER)" "branch/master"
 else
 	@echo "Not on master branch, not publishing."
 endif
-
-hugo:
-	docker run --rm -it -v $$(pwd):/data --entrypoint=/bin/hugo developer:latest ${RUN_ARGS}
