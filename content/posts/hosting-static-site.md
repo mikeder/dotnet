@@ -39,4 +39,4 @@ Accept defeat and enable static website hosting on the S3 bucket to enforce
 default root object to `index.html`.
 
 Testing an image
-![Example image](/static/img/jamuary19setup.jpg)
+![Example image](/img/jamuary19setup.jpg)
