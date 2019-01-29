@@ -38,5 +38,8 @@ Add theme and remove `.git` directory from it!
 Accept defeat and enable static website hosting on the S3 bucket to enforce
 default root object to `index.html`.
 
-Testing an image
-![Example image](/img/jamuary19setup.jpg)
+Testing an images
+
+![Synthesizers](/img/jamuary19setup.jpg)
+
+![GitHubCodeBuild](/img/inprg.jpg)
