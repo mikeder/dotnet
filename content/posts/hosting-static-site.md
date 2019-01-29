@@ -38,4 +38,5 @@ Add theme and remove `.git` directory from it!
 Accept defeat and enable static website hosting on the S3 bucket to enforce
 default root object to `index.html`.
 
-Do moar things
+Testing an image
+![Example image](/static/img/jamuary19setup.jpg)
