@@ -16,7 +16,7 @@ build:
 	hugo
 
 serve:
-	hugo server --bind=0.0.0.0 -D -w
+	hugo server --bind=0.0.0.0 -D -w --disableFastRender
 
 debug:
 	ls -alh .

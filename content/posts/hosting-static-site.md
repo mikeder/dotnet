@@ -2,7 +2,7 @@
 title: "Hosting Static Site"
 date: 2019-01-20T20:50:15-05:00
 description: "New attempt at a static site hosted in the cloud."
-draft: false
+draft: true
 tags:
 - AWS
 - cloud
