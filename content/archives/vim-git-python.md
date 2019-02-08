@@ -1,7 +1,8 @@
 ---
 title: "Vim Git Python"
-date: 2019-01-23T22:28:13-05:00
-draft: true
+date: 2014-12-14T22:28:13-05:00
+categories: ["Archive"]
+draft: false
 ---
 
 

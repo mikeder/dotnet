@@ -12,6 +12,7 @@
                     <header class="post-header">
 
                         <a href="{{ .Permalink }}" class="post-title">{{ .Title }}</a>
+                        {{ partial "tags.html" }}
 
                         <p class="post-meta">
                             {{ with .Params.author }}

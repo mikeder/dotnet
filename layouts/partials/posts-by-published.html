@@ -1,0 +1,10 @@
+<!-- Groups content by month according to the "date" field in front matter -->
+{{ range ( where .Pages "Type" "posts" ) }}
+<ul>
+    <li>
+    <h2><a href="{{ .Permalink }}">{{ .Title }}</a></h2>
+    <div class="meta">{{ .Date.Format "Mon, Jan 2, 2006" }}</div>
+    <p>{{ .Summary }}
+    </li>
+</ul>
+{{ end }}
