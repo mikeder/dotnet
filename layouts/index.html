@@ -6,15 +6,16 @@
     <div class="content pure-u-1 pure-u-md-3-4">
         <div>
             <!-- A wrapper for all the blog posts -->
-
             <h1>Posts:</h1>
             {{ partial "posts-by-published.html" . }}
+
+            <h3>Tags:</h3>
+            {{ partial "tags.html" . }}
 
             <hr>
 
             <h1>Archive:<h1>
             {{ partial "archive-by-date.html" . }}
-
 
             {{ partial "footer.html" . }}
         </div>
