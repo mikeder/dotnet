@@ -12,12 +12,12 @@
                     <header class="post-header">
 
                         <a href="{{ .Permalink }}" class="post-title">{{ .Title }}</a>
-                        {{ partial "post-meta.html" }}
 
                         <p class="post-meta">
                             {{ with .Params.author }}
                                 By <strong class="post-author">{{ . }}</strong>
                             {{ end }}
+                            {{ partial "post-meta.html" . }}
                         </p>
                     </header>
                     {{ if not .Site.Params.hideShareOptions }}

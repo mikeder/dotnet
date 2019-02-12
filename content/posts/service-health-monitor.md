@@ -2,7 +2,7 @@
 title: "Service Health Monitor"
 description: "Writing a service health monitor with Go"
 date: 2019-01-28T12:52:48-05:00
-topics: ['Work-In-Progress']
+categories: ['Work-In-Progress']
 tags:
 - AWS
 - cloud
