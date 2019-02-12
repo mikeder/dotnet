@@ -1,10 +1,13 @@
 ---
 title: "Cherrypy Research"
-date: 2019-01-23T22:17:09-05:00
-draft: true
+date: 2015-01-10T22:12:51-05:00
+categories: ["Archive"]
+tags:
+- cherrypy
+- python
+- development
 ---
 
-### Sat Jan 10 22:12:51 EST 2015
 
 #### Cherrypy research
 

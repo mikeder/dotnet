@@ -1,10 +1,14 @@
 ---
 title: "Cherrypy Sec"
-date: 2019-01-23T22:24:26-05:00
-draft: true
+date: 2014-12-22T13:59:44-05:00
+categories: ["Archive"]
+tags:
+- cherrymusic
+- python
+- Ubuntu
+- virtualization
 ---
 
-### Mon Dec 22 13:59:44 EST 2014
 
 #### Fixing a possible security hole in CherryM and Updates
 - [x] Create less priveledged user for cherryM

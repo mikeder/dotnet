@@ -1,10 +1,11 @@
 ---
-title: "Hosting Static Site"
+title: "Static Hugo Site on AWS"
 date: 2019-01-20T20:50:15-05:00
 description: "New attempt at a static site hosted in the cloud."
-categories: ['Work In Progress']
+topics: ['Work-In-Progress']
 tags:
 - AWS
+- hugo
 - cloud
 - web
 - development
@@ -12,7 +13,7 @@ tags:
 
 Notes pertaining to hosting a static site with Hugo, AWS S3 and CloudFront.
 
-
+<!--more-->
 Write CloudFormation template to build the following:
 
 - [x] CloudFront Distro

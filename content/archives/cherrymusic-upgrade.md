@@ -1,8 +1,9 @@
 ---
 title: "Cherrymusic Upgrade"
 date: 2014-12-16T08:50:25-05:00
+categories: ["Archive"]
 tags:
-- archive
+- Cherrymusic
 - linux
 - sysadmin
 - music

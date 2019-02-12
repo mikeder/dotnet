@@ -1,10 +1,11 @@
 ---
 title: "Cherrymusic Updates"
 date: 2014-12-16T21:34:25-05:00
+categories: ["Archive"]
 tags:
-- archive
 - linux
 - music
+- CherryMusic
 - sysadmin
 ---
 

@@ -2,7 +2,7 @@
 title: "Service Health Monitor"
 description: "Writing a service health monitor with Go"
 date: 2019-01-28T12:52:48-05:00
-categories: ['Work In Progress']
+topics: ['Work-In-Progress']
 tags:
 - AWS
 - cloud
@@ -16,6 +16,7 @@ Starting a small personal project written in golang. I'd like to build a lightwe
 Maintain some historical data so that a spark line of repsonse time/health status can be
  shown in the front end.
 
+ <!--more-->
 Investigate:
 
 - Scheduling periodic tasks, redis, gocron?

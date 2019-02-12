@@ -1,10 +1,12 @@
 ---
 title: "Cherrymusic Upgrade0"
-date: 2019-01-23T22:26:12-05:00
-draft: true
+date: 2014-12-15T21:38:50-05:00
+categories: ["Archive"]
+tags:
+- linux
+- music
+- cherrymusic
 ---
-
-### Mon Dec 15 21:38:50 EST 2014
 
 Updating CherryMusic over @ sqweeb.net to version 0.34.0, here are the steps I used and the changelog for the latest devel version:
 

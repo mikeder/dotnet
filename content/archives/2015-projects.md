@@ -3,7 +3,7 @@ title: "2015 Projects"
 date: 2015-01-01T23:26:18-05:00
 categories: ["Archive"]
 tags:
-- 2015
+- dell
 - homelab
 - poweredge
 ---

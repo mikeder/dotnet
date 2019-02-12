@@ -1,8 +1,8 @@
 ---
 title: "Cherrymusic Arch Ubuntu"
 date: 2014-12-18T11:06:35-05:00
+categories: ["Archive"]
 tags:
-- archive
 - linux
 - music
 - development

@@ -20,6 +20,8 @@
                         <a href="{{.Permalink}}">{{.Date.Format "2006-01-02"}} | {{.Title}}</a>
                     </li>
                 {{ end }}
+                <h3>Categories:</h3>
+                {{ partial "categories.html" . }}
                 </ul>
             {{ partial "footer.html" . }}
         </div>

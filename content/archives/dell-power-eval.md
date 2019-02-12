@@ -1,10 +1,13 @@
 ---
 title: "Dell Power Eval"
-date: 2019-01-23T22:18:15-05:00
-draft: true
+date: 2015-01-04T01:57:21-05:00
+categories: ["Archive"]
+tags:
+- dell
+- homelab
+- power
+- virtualization
 ---
-
-### Sun Jan  4 01:57:21 EST 2015
 
 #### Factoring price of running servers
 

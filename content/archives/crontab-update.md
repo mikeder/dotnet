@@ -1,9 +1,13 @@
 ---
 title: "Crontab Update"
-date: 2019-01-23T22:18:38-05:00
-draft: true
+date: 2015-01-03T03:26:01-05:00
+categories: ["Archive"]
+tags:
+- crontab
+- python
+- development
+- linux
 ---
-### Sat Jan  3 03:26:01 EST 2015
 
 #### Crontab update
 

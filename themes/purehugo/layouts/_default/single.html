@@ -12,17 +12,11 @@
                     <header class="post-header">
 
                         <a href="{{ .Permalink }}" class="post-title">{{ .Title }}</a>
-                        {{ partial "tags.html" }}
+                        {{ partial "post-meta.html" }}
 
                         <p class="post-meta">
                             {{ with .Params.author }}
                                 By <strong class="post-author">{{ . }}</strong>
-                            {{ end }}
-                            {{ if isset .Params "categories" }}
-                                under
-                                {{ range .Params.categories }}
-                                    <a class="post-category post-category-{{ . }}" href='{{ ( printf "categories/%s" . ) | absURL | lower }}'>{{ . | lower }}</a>
-                                {{ end }}
                             {{ end }}
                         </p>
                     </header>

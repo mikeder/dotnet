@@ -1,0 +1,3 @@
+{{ range $name, $taxonomy := .Site.Taxonomies.categories }}
+<a href="/categories/{{ $name | urlize }}">{{ $name | humanize }}</a>
+{{ end }}

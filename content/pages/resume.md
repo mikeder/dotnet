@@ -11,7 +11,7 @@ Michael W. Eder
 -   <https://github.com/mikeder>
 -   <emailme@mikeder.net>
 
-#### Work History
+#### Work History :page_facing_up:
 
 
 ### Software Engineer / Core Engineering, Bethesda.net `Feb. 2017 - Present`
