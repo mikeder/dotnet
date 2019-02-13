@@ -24,3 +24,6 @@ Investigate:
 - Alerting via Slack, Discord, Email, etc. (extensible alerting channels)
 - Default vs Custom health check path ( /status, /custom/path )
 - Deafult vs Custom health check request (method, response introspection, etc.)
+
+http-tracing
+https://medium.com/@deeeet/trancing-http-request-latency-in-golang-65b2463f548c
