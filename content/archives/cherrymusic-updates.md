@@ -1,11 +1,11 @@
 ---
-title: "Cherrymusic Updates"
+title: "Cherrymusic Upgrade pt. 3"
 date: 2014-12-16T21:34:25-05:00
 categories: ["Archive"]
 tags:
 - linux
 - music
-- CherryMusic
+- cherrymusic
 - sysadmin
 ---
 

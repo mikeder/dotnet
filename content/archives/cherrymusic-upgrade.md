@@ -1,14 +1,13 @@
 ---
-title: "Cherrymusic Upgrade"
+title: "Cherrymusic Upgrade pt. 2"
 date: 2014-12-16T08:50:25-05:00
 categories: ["Archive"]
 tags:
-- Cherrymusic
+- cherrymusic
 - linux
 - sysadmin
 - music
 ---
-
 
 This morning I actually finished the CherryMusic upgrade, I got distracted last night by an invite to do the VoG raid in Destiny. Since I had never run the raid before I jumped at the chance, its difficult for me because it requires 6
 players and I dont have that many friends who play. I ended up having to leave

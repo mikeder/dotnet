@@ -16,6 +16,8 @@ Starting a small personal project written in golang. I'd like to build a lightwe
 Maintain some historical data so that a spark line of repsonse time/health status can be
  shown in the front end.
 
+:cloud: [https://github.com/mikeder/gopinger](https://github.com/mikeder/gopinger)
+
  <!--more-->
 Investigate:
 
@@ -25,5 +27,5 @@ Investigate:
 - Default vs Custom health check path ( /status, /custom/path )
 - Deafult vs Custom health check request (method, response introspection, etc.)
 
-http-tracing
-https://medium.com/@deeeet/trancing-http-request-latency-in-golang-65b2463f548c
+Found this package for "http-tracing", it will be useful for getting request duration metrics.
+[http-tracing](https://medium.com/@deeeet/trancing-http-request-latency-in-golang-65b2463f548c)

@@ -6,6 +6,7 @@ tags:
 - linux
 - music
 - development
+- cherrymusic
 ---
 
 # CherryMusic update/migration from Arch Linux to Ubuntu 14.10
