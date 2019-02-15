@@ -1,12 +1,17 @@
 ---
-title: "Ups Rpi Ipmi"
-date: 2019-01-23T22:17:28-05:00
-draft: true
+title: "UPS RPi IPMI"
+date: 2015-01-09T08:00:04-05:00
+categories: ["Archive"]
+tags:
+- linux
+- virtualization
+- dell
+- sysadmin
+- IPMI
+- raspberrypi
 ---
 
-### Fri Jan  9 08:00:04 EST 2015
-
-#### UPS -> RPi -> IPMI tool update
+# UPS -> RPi -> IPMI tool update
 
 I realized this tool will not be able to run on the Raspberry Pi because the
 linux package from CyberPower isn't available for ARM processors. I could

@@ -1,12 +1,18 @@
 ---
-title: "Rsdc Rscrape"
-date: 2019-01-23T22:21:01-05:00
-draft: true
+title: "RSDC Scripting"
+date: 2014-12-28T05:08:53-05:00
+categories: ["Archive"]
+tags:
+- sysadmin
+- linux
+- music
+- bash
+- scripting
+- scraping
 ---
 
-### Sun Dec 28 05:08:53 EST 2014
+# RSDC + rscrape.sh
 
-#### RSDC + rscrape.sh
 - [x] Finish bash script for tools/rsdc (verbose and cronjob)
 
 I am very pleased with how well the music-scraper script is working now. In my
@@ -16,7 +22,7 @@ bash script is quite simple, there is a list of subreddits to scrape and a for
 loop that runs rsdc.py, copies new files over to the NAS and then cleans the
 working directory before the next run. Simple and beautiful.
 
-```
+```bash
 #!/bin/bash
 # ~/jobs/rscrape.sh
 
@@ -71,11 +77,11 @@ safely clear the source folder and not end up with duplicates. Although since
 the copy portion of the script above only updates the target, if a file already
 exists on the NAS it won't get copied over again.
 
-#### Crontab
+## Crontab
 
-* Edited 1/2/15
+- Edited 1/2/15
 
-```
+```bash
 $ crontab -l
 
 0 */12 * * * /home/meder/jobs/rscrape.sh > /home/meder/jobs/rscrape.log 2>&1

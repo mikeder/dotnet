@@ -8,11 +8,11 @@ tags:
 - cli
 ---
 
-#### PowerCLI Useful command
+# PowerCLI Useful command
 
 Adding this to the list of useful commands for the sysadmin world
 
-```
+```powershell
 # IPAddress[0] = internal IP, IPAddress[2] = external IP
 Get-VM "xb1-*lobby*" | Select Name, @{N="IP Address";E={@($_.guest.IPAddress[2])}}
 ```

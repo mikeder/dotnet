@@ -1,10 +1,15 @@
 ---
-title: "Ts2 Dimm"
-date: 2019-01-23T22:17:45-05:00
-draft: true
+title: "TS2 DIMM"
+date: 2015-01-06T23:35:52-05:00
+categories: ["Archive"]
+tags:
+- linux
+- virtualization
+- dell
+- sysadmin
 ---
 
-### Tue Jan  6 23:35:52 EST 2015
+# TS2 Server Memory Replacement
 
 - [x] Replace bad DIMM in TS2 (Bank 2 DIMM A)
 

@@ -1,15 +1,16 @@
 ---
-title: "Webrips"
+title: "Webrips Ripped"
 date: 2015-03-1T21:59:13-05:00
-draft: false
+categories: ["Archive"]
 tags:
-- archive
+- webrips
 - random
 - music
 ---
 
+# Ripped 2 Date
 
-```
+```bash
 meder@tools:/media/webrips$ du -h
 656M  ./atmosphericdnb
 3.2G  ./chillmusic

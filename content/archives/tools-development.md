@@ -1,13 +1,14 @@
 ---
 title: "NOC Tools Development"
 date: 2015-03-14T03:03:09-05:00
+categories: ["Archive"]
 tags:
 - archive
 - random
 - braindump
 ---
 
-#### NOC Tools Development
+# NOC Tools Development
 
 Collecting my thoughts on tools that we could use at work. I have been
 tinkering with a Shinken and Service Now script for auto ticketing alarms from
@@ -40,22 +41,16 @@ Some main points on what we need as far as Shinken integration with Service
 Now:
 
 * Ability to create and resolve tickets as alarms trigger and clear.
- * Gracefully handle CI's (some may be missing)
- * Set all required fields for resolving ticket correctly
-
+* Gracefully handle CI's (some may be missing)
+* Set all required fields for resolving ticket correctly
 * Auto acknowledge alarms once ticket has been generated
-
 * 'Oh Shit' page to mass resolve tickets if something blows up
-
 * Database for tracking open incidents
-
 * REST API to be called by Shinken reactioner via curl request
 
 The ticketing system will be the primary focus of this NOC tool portal but in
 addition I would still like to add some other commonly used tools:
 
 * Player creation/deletion (studio SG accounts)
-
 * AntHillPro build watcher (current activity, past build times, etc.)
-
 * RNG for creating new passwords

@@ -1,12 +1,17 @@
 ---
-title: "Ts2 and Seds"
-date: 2019-01-23T22:20:42-05:00
-draft: true
+title: "TS2 and SEDS"
+date: 2014-12-29T15:33:09-05:00
+categories: ["Archive"]
+tags:
+- linux
+- virtualization
+- development
+- sysadmin
+- gaming
+- lvm
 ---
 
-### Mon Dec 29 15:33:09 EST 2014
-
-#### TS2 and Space Engineers
+# TS2 and Space Engineers
 
 I opened up TS2 to add some extra RAM that I had laying around. This brings the
 grand total to 7GB! Not really anything to brag about but any little bit helps
@@ -16,7 +21,7 @@ version. The update to Space Engineers last week enabled worlds with a max of
 Just wanted to make note of these things for some reason. Not really an
 important update.
 
-#### CherryMusic development
+# CherryMusic Development
 
 I am going to start working on some contributions to the CherryMusic project.
 One of the dev's responded to a tread I started on the project page about

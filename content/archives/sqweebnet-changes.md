@@ -1,12 +1,16 @@
 ---
-title: "Sqweebnet Changes"
-date: 2019-01-23T22:14:08-05:00
-draft: true
+title: "SqweebNet Changes"
+date: 2015-01-25T02:55:21-05:00
+categories: ["Archive"]
+tags:
+- archive
+- braindump
+- sysadmin
+- metrics
+- cherrypy
 ---
 
-### Sun Jan 25 02:55:21 EST 2015
-
-#### sqweeb.net changes
+# sqweeb.net changes
 
 Thinking through the changes I want to make to sqweeb.net, I may end up doing
 away with wordpress completely as I don't really see myself updating an actual

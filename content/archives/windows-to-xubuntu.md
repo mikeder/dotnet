@@ -1,12 +1,14 @@
 ---
 title: "Windows to Xubuntu"
-date: 2019-01-23T22:15:30-05:00
-draft: true
+date: 2015-01-19T21:05:30-05:00
+categories: ["Archive"]
+tags:
+- braindump
+- random
+- linux
 ---
 
-### Mon Jan 19 21:05:29 EST 2015
-
-#### Swapping Windows 7 for Xubuntu
+# Swapping Windows 7 for Xubuntu
 
 For the past few days my home PC has been giving me problems in Windows.
 Complaining about Windows Security Essentials being turned off and I couldn't
