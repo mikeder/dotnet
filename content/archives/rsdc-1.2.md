@@ -1,13 +1,17 @@
 ---
-title: "Rsdc 1"
-date: 2019-01-23T22:14:36-05:00
-draft: true
+title: "RSDC v1.2"
+date: 2015-01-24T09:44:56-05:00
+categories: ["Archive"]
+tags:
+- reddit
+- music
+- development
+- python
+- scraping
+- randomver
 ---
 
---------------------------------------------------------------------------------
-### Sat Jan 24 09:44:56 EST 2015
-
-#### RSDC v1.2
+# RSDC v1.2
 
 I have finished the SQLite3 integration into the RSDC script. For now it isn't
 in plugin form because I wanted to just push to get it working. Now that I have

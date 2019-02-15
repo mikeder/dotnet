@@ -10,14 +10,13 @@ tags:
 
 Updating CherryMusic over @ sqweeb.net to version 0.34.0, here are the steps I used and the changelog for the latest devel version:
 
-```
+```bash
 cd ~/cherrymusic
 sudo git pull
 sudo systemctl restart cherrymusic@meder.service
 ```
 
-
-```
+```bash
 0.34.0 (2014-12-08)
 
  - FEATURE: sorting of queue and open playlists via dropdown menu

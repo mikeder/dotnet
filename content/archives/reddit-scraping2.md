@@ -1,10 +1,14 @@
 ---
-title: "Reddit Scraping2"
-date: 2019-01-23T22:23:06-05:00
-draft: true
+title: "Reddit Scraping pt. 2"
+date: 2014-12-27T00:36:37-05:00
+categories: ["Archive"]
+tags:
+- reddit
+- music
+- development
+- python
+- scraping
 ---
-
-### Sat Dec 27 00:36:37 EST 2014
 
 I didn't make the progress that I wanted to on the API work for RSDC(Reddit:
 Scrape, Download, Convert) but I did make some improvements to the way the

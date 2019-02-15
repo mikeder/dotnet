@@ -1,12 +1,14 @@
 ---
 title: "Dreaming Big"
-date: 2019-01-23T22:16:40-05:00
-draft: true
+date: 2015-01-12T09:49:18-05:00
+categories: ["Archive"]
+tags:
+- cherrypy
+- development
+- raspberryPi
 ---
 
-### Mon Jan 12 09:49:18 EST 2015
-
-#### Dreaming big in CherryPy and Mako
+# Dreaming big in CherryPy and Mako
 
 I have all these thoughts and ideas streaming through my head since playing
 with [Cherrypy][5] this weekend. I am still very much a novice in all aspects of

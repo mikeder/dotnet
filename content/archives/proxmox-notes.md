@@ -1,6 +1,7 @@
 ---
 title: "Proxmox Notes"
 date: 2015-04-12T18:08:32-05:00
+categories: ["Archive"]
 tags:
 - archive
 - homelab
@@ -8,13 +9,13 @@ tags:
 - proxmox
 ---
 
-#### Notes from Proxmox VE configurations
+# Notes from Proxmox VE configurations
 
 1. Do NOT hook up both NIC's to an unmanaged switch without first configuring
 2. Configure the host eth0 w/o an assigned IP
 3. Configure host vmbr0 with eth0 as a slave and DHCP can be used
 
-```
+```bash
 # network interface settings
 auto lo
 iface lo inet loopback

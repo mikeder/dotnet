@@ -9,7 +9,7 @@ tags:
 - virtualization
 ---
 
-#### Factoring price of running servers
+# Factoring price of running servers
 
 The new battery back-up that I have my servers connected to reports ~0.386kW
 with both servers running. With this number I can calculate the energy cost to
@@ -17,7 +17,7 @@ keep these servers running. Looking at my BGE bill there is quite a list of
 charges, fees, and taxes multiplied by my usage measure in kWh. Here is what my
 latest bill looks like:
 
-```
+```none
 BGE Elec Supply                 682 kWh x .0857500    58.48
 
 BGE Electric Delivery Service
@@ -42,7 +42,7 @@ Total BGE Electric Amount                          $101.00
 To figure out how much the servers cost to run I need to figure out how many
 kWh they use per day.
 
-```
+```none
 # E(kWh) = P(kW) x t(hr)
 E = 0.386 x 24 = 9.264        # kWh per day
 9.264 x .17197 = 1.59313008   # $ per day

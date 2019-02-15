@@ -1,14 +1,20 @@
 ---
-title: "Reddit Scraping"
-date: 2019-01-23T22:21:40-05:00
-draft: true
+title: "Reddit Scraping pt. 3"
+date: 2014-12-27T05:34:30-05:00
+categories: ["Archive"]
+tags:
+- reddit
+- music
+- development
+- python
+- scraping
 ---
 
-### Sat Dec 27 05:34:30 EST 2014
+# Mid Shift Progress Update
 
 Alright I think I've made enough progress to warrent a new entry. I decided to
 use an API wrapper for interfacing with Reddit.
-ReddiWrap(https://github.com/derv82/reddiwrap/) does exactly what I need and
+[ReddiWrap](https://github.com/derv82/reddiwrap/) does exactly what I need and
 isn't as complicated to use as PRAW. Using this also allowed me to clean up
 several sections of code:
 
@@ -31,7 +37,7 @@ I haven't made this Flask friendly yet and I'm not sure how easy it will be
 without breaking everything again. But, now that everything works as I intended
 I will start work on making this easier to expand into UI.
 
-#### Update 08:33 EST:
+## Update 08:33 EST:
 
 I had to make a slight change to the way the submodule ReddiWrap was handled. I
 found that if I did a git clone it broke the import of Web.py. I have made a

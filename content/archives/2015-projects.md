@@ -8,7 +8,7 @@ tags:
 - poweredge
 ---
 
-#### 2015 Projects
+# 2015 Projects
 
 Getting in the first update of the New Year! I'm going to try and do an entry
 to this log once a day for the rest of the year. That may be my only resolution
@@ -22,7 +22,7 @@ RAM when it was installed in TS1 but I couldn't remember which DIMM was
 actually bad. So now that TS2 has been powered on for a few days it is
 registering the same system event log which I can read with ipmitool.
 
-```
+```bash
 61 | 12/29/2014 | 16:18:17 | Physical Security #0x52 | General Chassis intrusion | Asserted
 62 | 12/29/2014 | 14:17:59 | Physical Security #0x52 | General Chassis intrusion | Deasserted
 63 | 12/29/2014 | 14:29:00 | Memory #0x01 | Correctable ECC (Correctable ECC | Bank 2DIMM A) | Asserted
@@ -64,7 +64,8 @@ to eventually have all of my python projects built into a nice Flask UI and
 living on the RPi for easy access. Time to commit this entry before its
 tomorrow.
 
-####Update 00:12:
+## Update 00:12
 
 Adding link for CyberPower PowerPanel Linux Manual
-+ http://www.cyberpowersystems.com/user-manuals/PPL-1.2_Software_UserManual.pdf
+
++ [User Manual](http://www.cyberpowersystems.com/user-manuals/PPL-1.2_Software_UserManual.pdf)

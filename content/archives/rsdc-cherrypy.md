@@ -1,13 +1,17 @@
 ---
-title: "Rsdc Cherrypy"
-date: 2019-01-23T22:15:01-05:00
-draft: true
+title: "RSDC & Cherrypy"
+date: 2015-01-24T00:58:25-05:00
+categories: ["Archive"]
+tags:
+- reddit
+- music
+- development
+- python
+- scraping
+- cherrypy
 ---
 
---------------------------------------------------------------------------------
-### Sat Jan 24 00:58:25 EST 2015
-
-#### More RSDC tweaks and CherryPy thoughts
+# More RSDC tweaks and CherryPy thoughts
 
 Not much going on at work tonight so to try and get back into the programming
 mindset I'm making some tweaks to the RSDC script. I'm still toying around with

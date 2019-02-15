@@ -8,8 +8,7 @@ tags:
 - development
 ---
 
-
-#### Cherrypy research
+# Cherrypy research
 
 Spent some time last night reading the Cherrypy docs and API. I'm trying to get
 a firm grasp on the web framework so I can better understand the changes I want
@@ -20,7 +19,7 @@ programming there are multiple ways to do what you want to do. My struggle
 right now is understanding the subject enough so as not to program myself into
 a corner and have an application that can't be expanded easily. In my research
 I found a project on BitBucket called
-[Twiseless.](https://bitbucket.org/Lawouach/twiseless/src "Twiseless") It seems
+[Twiseless.](https://bitbucket.org/Lawouach/twiseless/src) It seems
 like a good starting point for understanding how the various parts of Cherrypy
 *can* work together. I like the structure of it anyway so I think going forward
 I will try to setup my projects in a similar fashion. First on my list of

@@ -1,9 +1,15 @@
 ---
 title: "Ripped"
-date: 2019-01-23T22:12:20-05:00
-draft: true
+date: 2015-02-01T13:19:00-05:00
+categories: ["Archive"]
+tags:
+- reddit
+- music
+- development
+- python
+- scraping
 ---
 
-### Sun Feb  1 13:19:00 EST 2015
+# Scraped to Date
 
 16410 items, totaling 126.6 GB

@@ -9,8 +9,8 @@ tags:
 - virtualization
 ---
 
+# Fixing a possible security hole in CherryM and Updates
 
-#### Fixing a possible security hole in CherryM and Updates
 - [x] Create less priveledged user for cherryM
 
 I realized that running a music server that is open to the outside world with a

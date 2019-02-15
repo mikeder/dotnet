@@ -19,7 +19,7 @@ Last night I was trying to do some webrips with my [Reddit music scraper script]
 and I realized I forgot the command I used for cleaning non-UTF8 characters from
 the resulting files so I figured id log my process here.
 
-```
+```bash
 # Scrape a subreddit for new songs
 $ rsdc electronicmusic
 # Move to the scraped music output directory

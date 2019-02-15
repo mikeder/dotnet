@@ -1,12 +1,16 @@
 ---
-title: "Rsdc Cleanup"
-date: 2019-01-23T22:16:12-05:00
-draft: true
+title: "RSDC Cleanup"
+date: 2015-01-17T23:45:46-05:00
+categories: ["Archive"]
+tags:
+- sysadmin
+- linux
+- music
+- python
+- scraping
 ---
 
-### Sat Jan 17 23:45:46 EST 2015
-
-#### RSDC cleanup
+# RSDC Cleanup
 
 It only took a couple weeks worth of running full time for the music scraper
 job to fill up the disk on the tools VM. I had to update the rscrape.sh job
@@ -15,7 +19,7 @@ that runs every 12hrs to include a line that finds all source files older than
 getting downloaded and converted again but since the copy portion of the script
 only updates the destination location I shouldn't end up with duplicates.
 
-```
+```bash
 # Command to remove files older than 14 days and delete them
 find /home/meder/Downloads/rsdc/in/* -mtime +14 -exec rm {} \;
 ```
