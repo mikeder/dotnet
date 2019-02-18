@@ -1,6 +1,7 @@
 ---
 title: Roland Jupiter 6 Troubleshooting
-date: 2016-11-29 11:10:18
+date: 2016-11-29 16:10:18
+updated: 2016-11-29 11:10:18
 categories: ["Archive"]
 ---
 

@@ -1,12 +1,13 @@
 ---
 title: Installing Cabot on Debian 8
-date: 2016-10-28 11:16:04
+date: 2016-10-12 14:00:37
+updated: 2016-10-28 11:16:04
 categories: ["Archive"]
 ---
 
 https://www.unicoda.com/?p=1624
 
-```
+<pre class="prettyprint">
 sudo apt-get install python-dev python-pip postgresql ruby
 sudo pip install ecdsa fabric pycrypto
 git clone https://github.com/lincolnloop/cabot.git
@@ -22,7 +23,7 @@ source /home/ubuntu/venv/bin/activate
 cd cabot
 foreman start -e conf/production.env
 
-```
+</pre>
 
 Modifying fabric provision/deploy for multi instance deploys:
 

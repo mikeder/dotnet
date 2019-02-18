@@ -1,6 +1,7 @@
 ---
 title: Docker Shit
-date: 2017-07-12 14:38:34
+date: 2017-07-12 18:38:23
+updated: 2017-07-12 14:38:34
 categories: ["Archive"]
 ---
 

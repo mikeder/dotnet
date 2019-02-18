@@ -1,6 +1,7 @@
 ---
 title: Debian 9 (Stretch) Laptop Setup
-date: 2017-10-12 22:20:42
+date: 2017-10-13 02:15:24
+updated: 2017-10-12 22:20:42
 categories: ["Archive"]
 ---
 

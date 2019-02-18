@@ -1,12 +1,13 @@
 ---
 title: Mounting Linux Raid Arrays At Boot
-date: 2016-05-29 21:21:49
+date: 2016-05-30 00:53:12
+updated: 2016-05-29 21:21:49
 categories: ["Archive"]
 ---
 
 I have been having issues on reboot ever since I put together this newest server. I have 2 new Linux raid arrays (/dev/md0 and /dev/md1) both in a raid 1 consisting of 2 disks each:
 
-```
+<pre class="prettyprint">
 lsblk
 NAME         MAJ:MIN RM   SIZE RO TYPE  MOUNTPOINT
 fd0            2:0    1     4K  0 disk
@@ -36,11 +37,11 @@ loop4          7:4    0     4G  0 loop
 loop5          7:5    0     8G  0 loop
 loop6          7:6    0     8G  0 loop
 loop7          7:7    0     8G  0 loop
-```
+</pre>
 
 The problem was that when I would reboot the server, it would hang due to these arrays not being assembled prior to trying to mount them to their respective mount points. Also, during my investigation I discovered that the /etc/mdadm/mdadm.conf had duplicate array definitions in it for md0 and md1. So I removed all of the entries from mdadm.conf and rebuilt the arrays via webmin, now my config has the correct entries:
 
-```
+<pre class="prettyprint">
 cat /etc/mdadm/mdadm.conf
 # mdadm.conf
 #
@@ -70,11 +71,11 @@ MAILADDR root
 # This configuration was auto-generated on Thu, 18 Feb 2016 07:05:06 -0500 by mkconf
 ARRAY /dev/md0 uuid=4de7ae0b:483bdcba:2f8245fa:1c547394
 ARRAY /dev/md1 uuid=fdb60bc0:e02c229d:0552aef6:90726bcd
-```
+</pre>
 
 Now that I've got my array definitions in order I went about mounting the arrays to their correct mount points and confirmed /etc/fstab:
 
-```
+<pre class="prettyprint">
 cat /etc/fstab
 # <file system> <mount point> <type> <options> <dump> <pass>
 /dev/pve/root / ext4 errors=remount-ro 0 1
@@ -83,13 +84,13 @@ cat /etc/fstab
 proc /proc proc defaults 0 0
 /dev/md0        /mnt/storage-black      ext4    defaults        0       0
 /dev/md1        /mnt/storage-green      ext4    defaults        0       0
-```
+</pre>
 
 Once the configs are both in place and I can navigate through the file systems as expected I performed the following to set the disks to start at boot:
 
-```
+<pre class="prettyprint">
 dpkg-reconfigure mdadm    # Choose "all" disks to start at boot
 update-initramfs -u       # Updates the existing initramfs
-```
+</pre>
 
 [http://unix.stackexchange.com/questions/210416/new-raid-array-will-not-auto-assemble-leads-to-boot-problems](http://unix.stackexchange.com/questions/210416/new-raid-array-will-not-auto-assemble-leads-to-boot-problems)

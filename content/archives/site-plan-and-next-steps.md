@@ -1,6 +1,7 @@
 ---
 title: Site plan and next steps
-date: 2015-05-09 02:19:27
+date: 2015-05-04 18:15:55
+updated: 2015-05-09 02:19:27
 categories: ["Archive"]
 ---
 
@@ -8,7 +9,7 @@ I plan on this blog being an on going project that will evolve into a portal of 
 
 My next steps will probably include resurrecting some old posts from my previous Wordpress installation just to retain some information on the projects I had mentioned in them. After that will come the building out of modules or plugins for this site, this blog being the first main module. This basic blog module still needs much improvement, right now config options are directly set inside blog.py, which also functions as the server itself. I would like to break out these config setting into their own config file that will get read by a separate blog module that will be handled by a separate server. The idea here is to make this site as modular as possible so that individual pieces can be worked and reworked without breaking functionality elsewhere. Ideally my structure would look something like this:
 
-```
+<pre class="prettyprint">
 portal/
 - server.py
 - config.json
@@ -21,7 +22,7 @@ portal/plugins/
 - database/
 - graphing/
 - music-scraper/
-```
+</pre>
 
 The admin module would extend the server functionality but should not necessarily be required for it to function. I'm thinking it will probably be useful for giving the configuration a front end, for things like adding and enabling modules, plugins and end-points. I'll probably find that this approach is not the best but hopefully I will have everything modular and plug and play enough so that a major overhaul isn't required down the road...
 

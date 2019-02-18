@@ -1,6 +1,7 @@
 ---
 title: Ditching pfSense for a simpler approach
-date: 2015-05-27 11:07:57
+date: 2015-05-22 17:31:33
+updated: 2015-05-27 11:07:57
 categories: ["Archive"]
 ---
 
@@ -10,7 +11,7 @@ I decided to just get rid of the pfSense firewall/router in my setup up in favor
 
   Everything was up and working fairly quickly but I soon discovered an issue when I tried to commit and push a blog update to my internal GitLab server. I was unable to login via the command line when prompted. I kept getting authentication failed, this was not the case before I set up the proxy so I knew it had to be related to my new configuration. After some quick googling I found that I needed to add the "login=PASS" to the option list in the cache_peer lines for git.sqweeb.net:
 
-```
+<pre class="prettyprint">
 # Define servers that will use the proxy
 cache_peer git.sqweeb.net parent 80 0 no-query originserver login=PASS name=git
-```
+</pre>

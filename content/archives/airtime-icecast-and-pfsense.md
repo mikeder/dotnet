@@ -1,23 +1,24 @@
 ---
 title: Airtime, Icecast and pfSense
-date: 2015-05-15 03:54:57
+date: 2015-05-14 18:07:07
+updated: 2015-05-15 03:54:57
 categories: ["Archive"]
 ---
 
 Taking another look streaming internet radio along with more robust firewall and DNS control. I found a real nice Open Source radio backend called <a href="https://www.sourcefabric.org/en/airtime/" target="_blank">Airtime</a> that re-kindled the idea of running an internet radio stream. Getting Airtime installed took a few tries, eventually I decided to just use their easy-install script. One thing to note is that the server locale needs to be set to US-UTF8 before postgresql is installed, otherwise the airtime installer will complain that the database was made with the wrong format and will error out.
 
-```
+<pre class="prettyprint">
 airtime$ dpkg-reconfigure locales
 # select en_US-UTF8
-```
+</pre>
 
 The Airtime <a href="http://sourcefabric.booktype.pro/airtime-25-for-broadcasters/easy-setup/" target="_blank">installation</a> took care of the Icecast server installation and configuration, once everything was up and running I converted it to a "production" setup:
 
-```
+<pre class="prettyprint">
 # To convert a test installation into a production installation, you can run the command:
 sudo dpkg-reconfigure airtime
 # The dkpg-reconfigure command will run through the configuration steps shown in the Automated installation chapter, so that you can set the correct hostnames and passwords for # # your production Airtime server.
-```
+</pre>
 
 Once Airtime was installed I set about trying pfSense again. I wanted to figure out a way to route subdomains to the proper VM containers through a pfSense router/firewall. I also had to modify my network configuration a bit to separate the LAN in my house from the VM lan. To do this I created 3 bridges in Proxmox:
 

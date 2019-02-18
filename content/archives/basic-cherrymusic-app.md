@@ -1,6 +1,7 @@
 ---
 title: Basic CherryMusic App
-date: 2015-06-14 11:35:45
+date: 2015-06-14 15:33:21
+updated: 2015-06-14 11:35:45
 categories: ["Archive"]
 ---
 

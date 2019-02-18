@@ -1,12 +1,13 @@
 ---
 title: Patching KRACK WPA2 Vuln. on UniFi AP-AC-Lite
-date: 2017-10-17 22:41:48
+date: 2017-10-18 02:09:01
+updated: 2017-10-17 22:41:48
 categories: ["Archive"]
 ---
 
 I tried the recommended method [here](https://help.ubnt.com/hc/en-us/articles/115013737328-Ubiquiti-Devices-KRACK-Vulnerability) without luck. When done from the UniFi controller the upgrade would just not happen, no error given as to why. I then tried it directly on the AP and found that it wasn't able to verify the SSL cert from UBNT's site.
 
-```
+<pre class=prettyprint>
 BZ.v3.4.19# upgrade https://dl.ubnt.com/unifi/firmware/U7PG2/3.9.3.7537/BZ.qca956x.v3.9.3.7537.171013.1101.bin
 Downloading firmware from 'https://dl.ubnt.com/unifi/firmware/U7PG2/3.9.3.7537/BZ.qca956x.v3.9.3.7537.171013.1101.bin'.
 
@@ -18,11 +19,11 @@ ERROR: cannot verify dl.ubnt.com's certificate, issued by `/C=US/O=Amazon/OU=Ser
 To connect to dl.ubnt.com insecurely, use `--no-check-certificate'.
 Image short, header truncated.
 Invalid firmware.
-```
+</pre>
 
 So I logged into another machine and pulled down the .bin file
 
-```
+<pre class=prettyprint>
 meder@docker-01:~$ wget https://dl.ubnt.com/unifi/firmware/U7PG2/3.9.3.7537/BZ.q                                                ca956x.v3.9.3.7537.171013.1101.bin
 --2017-10-17 22:04:03--  https://dl.ubnt.com/unifi/firmware/U7PG2/3.9.3.7537/BZ.                                                qca956x.v3.9.3.7537.171013.1101.bin
 Resolving dl.ubnt.com (dl.ubnt.com)... 52.84.77.57
@@ -34,11 +35,11 @@ Saving to: ‘BZ.qca956x.v3.9.3.7537.171013.1101.bin’
 BZ.qca956x.v3.9.3.7 100%[=====================>]   7.11M  21.1MB/s   in 0.3s
 
 2017-10-17 22:04:03 (21.1 MB/s) - ‘BZ.qca956x.v3.9.3.7537.171013.1101.bin’ saved                                                 [7452312/7452312]
-```
+</pre>
 
 Started up a SimpleHTTPServer to serve the file locally:
 
-```
+<pre class=prettyprint>
 meder@docker-01:~$ python -m SimpleHTTPServer 8001
 Serving HTTP on 0.0.0.0 port 8001 ...
 # Open a browser and copy the link to the .bin file just downloaded an use is as the <firmware_url>
@@ -46,7 +47,7 @@ Serving HTTP on 0.0.0.0 port 8001 ...
 192.168.1.38 - - [17/Oct/2017 22:15:43] "GET /BZ.qca956x.v3.9.3.7537.171013.1101.bin HTTP/1.1" 200 -
 
 BZ.v3.4.19# upgrade http://docker-01.sqweeb.net:8001/BZ.qca956x.v3.9.3.7537.171013.1101.bin
-```
+</pre>
 
 This started the upgrade but was still not successful, still no indication why yet..
 

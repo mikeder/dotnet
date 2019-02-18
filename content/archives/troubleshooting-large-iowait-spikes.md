@@ -1,6 +1,7 @@
 ---
 title: Troubleshooting large IOWait spikes
-date: 2016-09-25 21:58:45
+date: 2016-08-30 17:28:54
+updated: 2016-09-25 21:58:45
 categories: ["Archive"]
 ---
 
@@ -20,7 +21,7 @@ changed mount options:
 - After: relatime,barrier=0,errors=remount-ro
 
 pveperf before:
-```
+<pre class="prettyprint">
 root@pve-01:~# pveperf /
 CPU BOGOMIPS:      19244.00
 REGEX/SECOND:      959888
@@ -41,10 +42,10 @@ FSYNCS/SECOND:     316.08
 DNS EXT:           84.80 ms
 DNS INT:           107.74 ms (sqweeb.net)
 
-```
+</pre>
 
 pveperf after:
-```
+<pre class="prettyprint">
 root@pve-01:~# pveperf /
 CPU BOGOMIPS:      19244.08
 REGEX/SECOND:      953290
@@ -64,20 +65,20 @@ AVERAGE SEEK TIME: 0.20 ms
 FSYNCS/SECOND:     2376.09
 DNS EXT:           104.70 ms
 DNS INT:           90.75 ms (sqweeb.net)
-```
+</pre>
 
 I also found there were some rouge monitoring processes running after a host reboot, collectd, splunkd, and filebeat were all running from previous installs. I hunted down and removed/stopped/deleted all associated files I could find on the host and the containers.
 
-```
+<pre class="prettyprint">
 find / -name 'splunk'
 find / -name 'collectd'
 find/ -name 'filebeat'
-```
+</pre>
 
 After these changes I found that the IOWait spikes were still occurring at ~15-20min intervals. Doing some more digging I found something interesting, it seems that the /dev/sda device is the source of delay, and when checking smartctl I found that the firmware is different on this drive compared to a drive of the same model:
 
 #### /dev/sda
-```
+<pre class="prettyprint">
 root@pve-01:~# smartctl -a /dev/sda
 smartctl 6.4 2014-10-07 r4002 [x86_64-linux-4.2.6-1-pve] (local build)
 Copyright (C) 2002-14, Bruce Allen, Christian Franke, www.smartmontools.org
@@ -97,10 +98,10 @@ SATA Version is:  SATA 3.2, 6.0 Gb/s (current: 3.0 Gb/s)
 Local Time is:    Wed Aug 31 10:17:57 2016 EDT
 SMART support is: Available - device has SMART capability.
 SMART support is: Enabled
-```
+</pre>
 
 #### /dev/sdc
-```
+<pre class="prettyprint">
 root@pve-01:~# smartctl -a /dev/sdc
 smartctl 6.4 2014-10-07 r4002 [x86_64-linux-4.2.6-1-pve] (local build)
 Copyright (C) 2002-14, Bruce Allen, Christian Franke, www.smartmontools.org
@@ -120,7 +121,7 @@ SATA Version is:  SATA 3.2, 6.0 Gb/s (current: 3.0 Gb/s)
 Local Time is:    Wed Aug 31 10:22:50 2016 EDT
 SMART support is: Available - device has SMART capability.
 SMART support is: Enabled
-```
+</pre>
 
 At this time it isn't clear if it is even possible to update or change the firmware on these drives..
 
@@ -131,7 +132,7 @@ http://www.howtogeek.com/62761/how-to-tweak-your-ssd-in-ubuntu-for-better-perfor
 
 After looking back over the above documents, mount option tweaks for SSD's and such I realized I was overlooking one important task; fstrim. Most posts discussed enabling the discard mount option for SSD's but then other posts suggested this option causes a huge decrease in performance and to instead create a cron job that runs fstrim daily or weekly. I enabled a daily TRIM using the following script:
 
-```
+<pre class="prettyprint">
 /etc/cron.daily/fstrim
 
 #!/bin/sh
@@ -141,6 +142,6 @@ PATH=/bin:/sbin:/usr/bin:/usr/sbin
 ionice -n 7 fstrim -v /
 ionice -n 7 fstrim -v /var/lib/vz
 
-```
+</pre>
 
 I then manually ran the two commands to apply the trim job now and there was an immediate improvement. I am no longer seeing 15-20% spikes in IOWAIT every 20-30 minutes!!
