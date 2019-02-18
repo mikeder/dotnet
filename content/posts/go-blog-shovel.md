@@ -1,5 +1,5 @@
 ---
-title: "Go Blog Shovel"
+title: "Writing a data mover in Go"
 date: 2019-02-17T15:34:34-05:00
 tags:
   - new
@@ -8,14 +8,11 @@ tags:
 categories: ["Development", "Golang"]
 ---
 
-## Writing a data mover in Go
-
 I needed a tool to move some old tornado blog posts from its mysql database into the archive here. I'm going to use this as an opportunity to practice writing some Go that talks to a database and writes out to a file on disk.
 
 :cloud: https://github.com/mikeder/blogshovel
 
 <!--more-->
-
 
 First I need to learn how to connect to a database in Go.
 
