@@ -1,5 +1,5 @@
 ---
-title: Reverse proxy: replacing squid3 w/ nginx
+title: Replacing squid3 w/ nginx reverse proxy
 date: 2015-06-29 08:02:12
 categories: ["Archive"]
 ---
@@ -8,7 +8,7 @@ When I was using the squid3 package in pfSense it came configured ready to use S
 
 ```
 root@proxy:~# squid3 -v | grep ssl                                                          
-root@proxy:~# 
+root@proxy:~#
 # Nothing?!
 ```
 
