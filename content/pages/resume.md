@@ -27,6 +27,7 @@ Michael W. Eder
     feature integration teams.
 -   Migrated platform deployment from monolithic EC2 instances to
     Docker/ECS micro services, based on common core library.
+-   Design and build high volume Fluentd, Elasticsearch and Kibana logging solution.
 
 ### Tools Administrator / ServiceNow Developer, Zenimax Online Studios `Apr. 2016 - Feb. 2017`
 
@@ -82,6 +83,7 @@ Bethesda/Zenimax Media umbrella.
 
 ### Game Credits
 
+-   Fallout 76 (2018) Bethesda.net Engineering Team
 -   Prey: Mooncrash (2018) Bethesda.net Engineering Team
 -   Dishonored: Death of the Outsider (2017)
     Bethesda.net Engineering Team
