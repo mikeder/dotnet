@@ -1,0 +1,1 @@
+{"version":1,"allow_edit":true,"plugins":[],"panes":[],"datasources":[{"name":"checks","type":"JSON","settings":{"url":"https://gopinger.sqweeb.net/checks/run","use_thingproxy":false,"refresh":2,"method":"GET"}},{"name":"results","type":"JSON","settings":{"url":"https://gopinger.sqweeb.net/results","use_thingproxy":false,"refresh":5,"method":"GET","name":"results"}}],"columns":3}
