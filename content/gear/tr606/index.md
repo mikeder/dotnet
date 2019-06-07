@@ -1,5 +1,5 @@
 ---
-title: "Tr606"
+title: "Roland TR606"
 date: 2019-06-07T11:01:41-04:00
 categories: ["Gear"]
 tags:
@@ -8,9 +8,6 @@ tags:
   - roland
   - synthesizers
 ---
-
-
-![Gear](/gear/tr606/images/gear.png)
 
 
 |   | Date | Price |
