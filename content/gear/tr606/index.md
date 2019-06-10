@@ -12,7 +12,7 @@ tags:
 
 | - | Date | Price |
 |--------|------|-------|
-|Purchased| ? | $ |
+|Purchased| 06/13/2009 | $310 |
 |Sold| 6/5/2019 | $420 |
 
 Sold to a Connor Clasen of Allentown PA - [IXVLF](https://soundcloud.com/ixvlf/wet-floor/s-0Wows)

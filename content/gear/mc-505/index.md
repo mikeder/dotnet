@@ -13,7 +13,8 @@ tags:
 
 | (Action) | (Date) | (Cost) |
 | :------ | :---- | :---- |
-| Purchased  | ? | $ |
+| Purchased  | 03/17/2009 | $319 |
 | Sold  | ? | $ |
 | Replacement LCD | 2010? | $50 |
 
+First piece of gear, acquired after a weekend spent with a friends MC-303 making absurd techno/trance tunes at a party.
