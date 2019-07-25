@@ -11,78 +11,67 @@ Michael W. Eder
 -   <https://github.com/mikeder>
 -   <emailme@mikeder.net>
 
-#### Work History :page_facing_up:
+### Certifications
 
+AWS Solutions Architect Associate 2019
 
-### Software Engineer / Core Engineering, Bethesda.net `Feb. 2017 - Present`
+### Education
+
+Mount Saint Joseph High School 2004
+CCBC Catonsville - Associates Degree Automotive Engineering 2006
+
+### Work Experience
+
+#### SRE Lead / Live Engineering, Bethesda.net `Apr. 2019 - Present`
+
+-   Lead team of 8 local and remote engineers from various backgrounds.
+-   Troubleshoot and resolve player impacting issues in Production.
+-   Support game team integration into BNET platform.
+-   Define and monitor SLI's and SLO's for platform services.
+-   Identify service performance optimizations.
+-   Total cost of ownership reductions through improving AWS resource utilization.
+-   Present regular platform performance reports to leadership.
+-   Ongoing contributions to platform language migration from Python to Golang.
+
+#### Software Engineer / Core Engineering, Bethesda.net `Feb. 2017 - Apr. 2019`
 
 -   AWS architecture solutions implementation and usage governance.
--   Build, maintain and support Python services that make up the BNET
+-   Architect and operate sharded service infrastructure and 1000+ node ECS clusters.
+-   Built, maintained and supported Python services that make up the BNET
     API.
--   Apply NewRelic instrumentation to stacks of Django, Flask and
-    Tornado applications.
--   Main contributions to API key access control, client messaging/MOTD,
-    event logging and publishing systems.
--   Maintained and bug fixed common core library while supporting
+-   Apply NewRelic instrumentation to stacks of Python, NodeJS, and Java applications.
+-   Primary development contributions to API key system, client messaging/MOTD, event logging and publishing systems.
+-   Maintain and bug fix common core library while supporting
     feature integration teams.
 -   Migrated platform deployment from monolithic EC2 instances to
     Docker/ECS micro services, based on common core library.
--   Design and build high volume Fluentd, Elasticsearch and Kibana logging solution.
+-   Designed and built high volume Fluentd, Elasticsearch and Kibana logging solution.
 
-### Tools Administrator / ServiceNow Developer, Zenimax Online Studios `Apr. 2016 - Feb. 2017`
+#### Tools Administrator, Zenimax Online Studios `Apr. 2016 - Feb. 2017`
 
--   Live Operations, monitoring, alerting tools integration and
-    development.
+-   Live Operations monitoring, alerting tools integration and development.
 -   ServiceNow administration, customization and development.
 -   Slack integration and bot development.
--   Technical lead for migration from
-    [ServiceNow](https://www.servicenow.com/) to
-    [ChangeGear](https://www.sunviewsoftware.com/products) ticketing
-    systems.
+-   Technical lead for migration from ServiceNow to ChangeGear ticketing systems.
 
-### System Administrator, Zenimax Online Studios `Aug. 2014 - Apr. 2016`
+#### System Administrator, Zenimax Online Studios `Aug. 2014 - Apr. 2016`
 
 Operations and Development support for various game studios within the
 Bethesda/Zenimax Media umbrella.
+-   Run and monitor game builds - AntHill Pro, Jenkins CI, and Team City.
+-   Investigate failed builds, escalate to game engineers as necessary.
+-   Deploy approved builds to datacenter and AWS.
+-   Infrastructure maintenance and vendor support coordination.
+-   Apply updates to virtual hosts and patch server operating systems.
+-   Server configuration management via Chef.
+-   Monitoring health of various environments and infrastructure via Graphite and Grafana.
+-   Splunk for exploit investigations, error finding/log diving.
+-   Update and improve tools used in the NOC such as Geckoboard widgets, Shinken configurations and ServiceNow dashboards.
+-   Contribute to knowledge base and documentation in Confluence.
 
-#### Development/Publishing Support:
+#### Game Credits
 
--   Running and monitoring new builds using AntHill Pro, Jenkins CI, and
-    Team City
--   Investigation into failed builds, escalating to game engineers when
-    necessary
--   Coordinate with QA when new builds are ready for validation
--   Deploying approved builds to datacenters and AWS
-
-#### Operations Support:
-
--   Infrastructure maintenance and vendor support coordination
--   Apply updates to virtual hosts and patch server operating systems
-    (ESXi 5.5, Centos 6.6, HP and Dell chassis firmware)
--   Hardware installation and configuration (racking new hardware,
-    running cables, installing OS and configuring IP addresses for
-    remote management interfaces)
--   Parts replacement for Dell and HP hardware (power supplies, hard
-    drives, etc.)
--   Server management (Configuration updates via Chef)
--   Monitoring health of various environments and infrastructure:
--   Shinken for host and service monitoring in our datacenters
--   Geckoboard for live HUD's (populations, queues, realm status)
--   Graphite/Grafana for historic metrics monitoring (populations, game
-    load, database load, etc.)
--   Splunk for exploit investigations, error finding/log diving
--   Alarm handling (hardware and service performance alerts)
-
-#### Tools Development:
-
--   Updating and improving tools used in the NOC and by customers such
-    as Geckoboard widgets, Shinken configurations and Service Now
-    dashboards
--   Improve documentation in Service Now Knowledge Base and Confluence
-    when new issues arise or recurring ones need a process to resolve.
-
-### Game Credits
-
+-   Rage 2 (2019) Bethesda.net Engineering Team
 -   Fallout 76 (2018) Bethesda.net Engineering Team
 -   Prey: Mooncrash (2018) Bethesda.net Engineering Team
 -   Dishonored: Death of the Outsider (2017)
