@@ -22,7 +22,14 @@ CCBC Catonsville - Associates Degree Automotive Engineering 2006
 
 ### Work Experience
 
-#### SRE Lead / Live Engineering, Bethesda.net `Apr. 2019 - Present`
+#### Lead Golang Developer / E-Commerce, Bethesda.net `Aug. 2019 - Current`
+
+-   Lead Golang language migration effort for E-Commerce team.
+-   Provide end-to-end gRPC and REST microservice implementations.
+-   Work closely with in-house and contract engineers to promote development
+    and engineering best practices.
+
+#### SRE Lead / Live Engineering, Bethesda.net `Apr. 2019 - Aug. 2019`
 
 -   Lead team of 8 local and remote engineers from various backgrounds.
 -   Troubleshoot and resolve player impacting issues in Production.
