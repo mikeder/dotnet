@@ -11,15 +11,6 @@ Michael W. Eder
 -   <https://github.com/mikeder>
 -   <emailme@mikeder.net>
 
-## Certifications
-
--   AWS Solutions Architect Associate 2019
-
-## Education
-
--   Mount Saint Joseph High School 2004
--   CCBC Catonsville - Associates Degree Automotive Engineering 2006
-
 ## Work Experience
 
 #### Lead Golang Developer / E-Commerce, Bethesda.net `Aug. 2019 - Current`
@@ -76,6 +67,15 @@ Bethesda/Zenimax Media umbrella.
 -   Splunk for exploit investigations, error finding/log diving.
 -   Update and improve tools used in the NOC such as Geckoboard widgets, Shinken configurations and ServiceNow dashboards.
 -   Contribute to knowledge base and documentation in Confluence.
+
+## Certifications
+
+-   AWS Solutions Architect Associate 2019
+
+## Education
+
+-   Mount Saint Joseph High School 2004
+-   CCBC Catonsville - Associates Degree Automotive Engineering 2006
 
 #### Game Credits
 
