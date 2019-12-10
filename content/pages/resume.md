@@ -13,12 +13,12 @@ Michael W. Eder
 
 ## Certifications
 
-AWS Solutions Architect Associate 2019
+-   AWS Solutions Architect Associate 2019
 
 ## Education
 
-Mount Saint Joseph High School 2004
-CCBC Catonsville - Associates Degree Automotive Engineering 2006
+-   Mount Saint Joseph High School 2004
+-   CCBC Catonsville - Associates Degree Automotive Engineering 2006
 
 ## Work Experience
 
