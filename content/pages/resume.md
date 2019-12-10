@@ -65,6 +65,7 @@ CCBC Catonsville - Associates Degree Automotive Engineering 2006
 
 Operations and Development support for various game studios within the
 Bethesda/Zenimax Media umbrella.
+
 -   Run and monitor game builds - AntHill Pro, Jenkins CI, and Team City.
 -   Investigate failed builds, escalate to game engineers as necessary.
 -   Deploy approved builds to datacenter and AWS.
