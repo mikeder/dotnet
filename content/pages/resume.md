@@ -11,16 +11,16 @@ Michael W. Eder
 -   <https://github.com/mikeder>
 -   <emailme@mikeder.net>
 
-### Certifications
+## Certifications
 
 AWS Solutions Architect Associate 2019
 
-### Education
+## Education
 
 Mount Saint Joseph High School 2004
 CCBC Catonsville - Associates Degree Automotive Engineering 2006
 
-### Work Experience
+## Work Experience
 
 #### Lead Golang Developer / E-Commerce, Bethesda.net `Aug. 2019 - Current`
 
