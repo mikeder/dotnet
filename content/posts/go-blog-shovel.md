@@ -2,6 +2,7 @@
 title: "Writing a data mover in Go"
 date: 2019-02-17T15:34:34-05:00
 categories: ["Blog"]
+draft: true
 tags:
   - new
   - Golang

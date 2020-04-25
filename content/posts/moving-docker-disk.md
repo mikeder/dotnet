@@ -2,6 +2,7 @@
 title: "Moving Docker Disk"
 date: 2019-06-12T22:14:51-04:00
 categories: ["Homelab"]
+draft: true
 tags:
   - new
   - docker

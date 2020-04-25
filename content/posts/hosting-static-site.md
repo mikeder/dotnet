@@ -3,6 +3,7 @@ title: "Static Hugo Site on AWS"
 date: 2019-01-20T20:50:15-05:00
 description: "New attempt at a static site hosted in the cloud."
 categories: ["Blog", "Work-In-Progress"]
+draft: true
 tags:
 - AWS
 - hugo
