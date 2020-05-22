@@ -1,8 +1,5 @@
 # dotnet  ![Build Status](https://codebuild.us-east-1.amazonaws.com/badges?uuid=eyJlbmNyeXB0ZWREYXRhIjoiWGN6WTY0OStTUUtMcnZHWncyTkVDNWgxdEtqaWhFeWl5bEF6Sml0cmV4L0wrUFM3RXJCWTVhSDYzTHdqcStYSVNPZzlWTU80ZnZDbGRHaHBibUxNWWcwPSIsIml2UGFyYW1ldGVyU3BlYyI6IlNZRHRmcHpXcmlGZ1NyWVciLCJtYXRlcmlhbFNldFNlcmlhbCI6MX0%3D&branch=master) 
 
-Source for https://mikeder.net
-
-
 
 Static site to be built with Hugo, service on AWS S3 via CloudFront.
 Links to images/music via separate cache origin behaviors.
